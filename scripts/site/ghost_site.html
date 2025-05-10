@@ -1874,9 +1874,9 @@
             settings.rgb_blue_pin = rgbBluePin;
 
             // Add validation
-            if (!isNaN(rgbRedPin)) validateGpioRange(rgbRedPin, 'Red pin');
-            if (!isNaN(rgbGreenPin)) validateGpioRange(rgbGreenPin, 'Green pin'); 
-            if (!isNaN(rgbBluePin)) validateGpioRange(rgbBluePin, 'Blue pin');
+            if (!isNaN(rgbRedPin)) rgbRedPin, 'Red pin';
+            if (!isNaN(rgbGreenPin)) rgbGreenPin, 'Green pin'; 
+            if (!isNaN(rgbBluePin)) rgbBluePin, 'Blue pin';
 
             fetch('/api/settings', {
                 method: 'POST',
